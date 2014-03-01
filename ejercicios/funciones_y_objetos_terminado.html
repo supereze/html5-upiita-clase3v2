@@ -5,7 +5,16 @@
         <title>Texto a numero</title>
         <script>
          /*Aquí todo el código en javaScript*/
-
+         var name = prompt("Nombre:");
+         var surname = prompt("Apellido; ");
+         var persona = new Object();
+         persona.nombre = name;
+         persona.apellido = surname;
+         var imprime = function(a, b){
+             alert("nombre: " + a + " apellido " + b);
+         };
+         
+         imprime(persona.nombre, persona.apellido);
         </script>
     </head>
     <body>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>JavaScript</title>
+        <script>
+           /* var nombreUsuario = prompt("¿Cómo te llamas");
+            document.write(nombreUsuario);*/
+            /*declaramos una funcion*/
+           function escribir(texto){
+               document.write(texto);               
+           }
+           escribir("funcion!!!");
+           
+           /*funciones anonimas*/
+          var funcion_sumar;
+          var funcion_multiplicar;
+          var resultado = 0;
+          funcion_sumar = function(a, b){
+            resultado = a + b;
+            document.write("<p>suma " + resultado + "</p>");
+          };
+          funcion_multiplicar = function(a, b){
+              resultado = a * b;
+              document.write("<p>multiplicacion" + resultado + "</p>");
+          };
+          /*funcion_sumar(2, 3);*/
+          /*una funcion que recibe como parametro otra funcion*/
+         var operacion;
+         operacion = function(unaFuncion){
+             unaFuncion(3,3);
+         };
+         
+         operacion(funcion_sumar);
+         operacion(funcion_multiplicar);
+          
+        </script>
+    </head>
+    <body>
+        <p>
+            Aprendiendo JavaScript
+        </p>
+    </body>
+</html>
